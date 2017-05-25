@@ -30,9 +30,6 @@ class LoginForm extends Component {
   }
 
   onLoginFail() {
-    console.log("fail", this.state.email);
-    console.log("fail", this.state.password);
-
     this.setState({
       error: 'Authentication Failed.',
       loading: false
@@ -40,8 +37,6 @@ class LoginForm extends Component {
   }
 
   onLoginSuccess() {
-    console.log("sucess", this.state.email);
-
     this.setState({
       email: '',
       password: '',
@@ -99,7 +94,7 @@ class LoginForm extends Component {
 const styles = {
   errorTextStyle: {
     fontSize: 20,
-    alignItems: 'center',
+    textAlign: 'center',
     color: 'red'
   }
 }
